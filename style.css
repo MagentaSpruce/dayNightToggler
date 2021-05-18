@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.label{
+    background-color: #111;
+    height: 3rem;
+    width: 6rem;
+
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    position: relative;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(2.7rem);
+}
+
+.ball{
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: #fff;
+   border-radius: 50%;
+    position: absolute;
+    transition: transform .2s linear;
+}
+
+.fa-moon{
+    color: #f1c40f;
+    font-size: 2rem;
+}
+.fa-sun{
+    color: #f39c12;
+    font-size: 2rem;
+}
